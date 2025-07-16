@@ -1,0 +1,110 @@
+:root {
+    --color-primary: #A1614A;
+    --color-accent:  #F2C57C;
+    --text-dark:    #333;
+    --border-light: rgba(0,0,0,0.05);
+    --bg-light:     #FEF4EC;
+  }
+  
+  .users-container {
+    padding: 4rem 1.5rem 1.5rem;
+    background-color: var(--bg-light);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .users-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .users-table-wrapper {
+    overflow-x: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    background-color: #fff;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+  
+  .users-table thead {
+    background-color: var(--color-primary);
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+  }
+  
+  .users-table th {
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .users-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .users-table tbody tr:hover {
+    background-color: #fff2e6;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+  }
+  
+  .badge-active {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .badge-inactive {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .btn-toggle {
+    background-color: var(--color-accent);
+    color: var(--text-dark);
+  }
+  
+  .btn-toggle:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  .btn-delete {
+    background-color: #dc2626;
+    color: #fff;
+  }
+  
+  .btn-delete:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+  }
+  

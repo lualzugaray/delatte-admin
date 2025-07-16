@@ -1,0 +1,84 @@
+:root {
+    --color-primary: #A1614A;
+    --color-accent: #F2C57C;
+    --text-dark: #333;
+    --border-light: rgba(0,0,0,0.05);
+    --bg-light: #FEF4EC;
+  }
+  
+  .reviews-container {
+    padding: 4rem 1.5rem 1.5rem;
+    background-color: var(--bg-light);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .reviews-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .reviews-table-wrapper {
+    overflow-x: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    background-color: #fff;
+  }
+  
+  .reviews-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+  
+  .reviews-table thead {
+    background-color: var(--color-primary);
+  }
+  
+  .reviews-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--border-light);
+  }
+  
+  .reviews-table tbody tr {
+    transition: background-color 0.2s;
+  }
+  
+  .reviews-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .reviews-table tbody tr:hover {
+    background-color: #fff2e6;
+  }
+  
+  .reviews-table td {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--border-light);
+  }
+  
+  .btn-delete {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    background-color: #dc2626;
+    color: #fff;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .btn-delete:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+  }
+  
