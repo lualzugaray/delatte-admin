@@ -1,6 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import logo from "../assets/logo.png";
-import "../styles/ogin.css";
+import "../styles/login.css";
 
 export default function Login() {
   const { loginWithRedirect, isLoading } = useAuth0();
