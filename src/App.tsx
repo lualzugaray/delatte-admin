@@ -1,8 +1,5 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-
-import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import CafesList from './pages/CafesList';
 import UsersList from './pages/UsersList';
@@ -12,6 +9,7 @@ import ReviewReportsList from './pages/ReviewReportsList';
 import Login from './pages/Login';
 import CafeDetail from './pages/CafeDetail';
 import { ToastContainer } from 'react-toastify';
+import Sidebar from './components/Sidebar';
 
 function ProtectedLayout({ onLogout }: { onLogout: () => void }) {
   return (
