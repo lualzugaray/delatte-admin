@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
-import '../styles/Dashboard.css';
+import '../styles/dashboard.css';
 
 export default function Dashboard() {
     const { getAccessTokenSilently } = useAuth0();
